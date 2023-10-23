@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#icons').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="styless.css">
+    <title>Make your Payment</title>
+</head>
+<body>
+    <header class="sub-header">
+        <nav>
+            <label class="logo">Dija<i class="fa fa-heart"></i></label>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="payment.html">paymentt</a></li>
+                <li><a href="feedback.html">feedback</a></li>
+            </ul>
+           <label id="icons">
+                <i class="fa fa-bars"></i>
+           </label>
+        </nav>
+    </header>
+    
+    
+    <section class="payment">
+        <h2>Order and pay for your goods, will be deliverd within 24hours.</h2>
+        <p>What are you still waiting for? <span>make your order now!!!<i class="fa fa-heart"></i></span></p>
+        <div class="container1">
+            <label class="label1">
+                <input type="radio" value="Undies" name="cloth">Bra $ pant
+            </label><br>
+            <label class="label2">
+                <input type="radio" value="palm" name="cloth">Palm
+            </label><br>
+            <label class="label3">
+                <input type="radio" value="highheel" name="cloth">highheel
+            </label><br>
+            <label class="label4">
+                <input type="radio" value="Classy" name="cloth">Classy Gown
+            </label><br>
+            <label class="label5">
+                <input type="radio" value="abaya" name="cloth">Dubai Abaya
+            </label>
+            <button type="price" value="prices" id="order">Prices
+                <select name="role" id="role">
+                    <option value="3,000">3,000</option>
+                    <option value="7,300">7,300</option>
+                    <option value="1,500">10,000</option>
+                    <option value="20,000">20,000</option>
+                </select>
+            </button><br><br>
+            <button class="order"><strong>Order</strong></button>
+            
+        </div><br>
+        
+        <div clsas="container2">
+            <div class="first">
+                <button id="order">Payment
+                    <select name="role" id="role">
+                        <option value="card">ATM</option>
+                        <option value="credit card">Credit card</option>
+                        <option value="master card">Master card</option>
+                        <option value="transfer">Transfer</option>
+                    </select>
+                </button><br><br>
+                <a href="feedback.html" class="hero-btn">Feedback</a>
+            </div>
+        </div>
+      
+    </section>
+    <section class="footer">
+        <h4>For more enquiry</h4>
+        <p> Dija Store appreciate your patronag <span class="icons"><i class="fa fa-phone"></i></span> Or Contact Us for any Issue<br><br>
+            <a href="contact.html" class="hero-btn">Contact Us</a><br><br>
+            You can reach us via our other platform.
+        </p>
+        <div class="icons">
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        
+     </section>
+    </body>
+    </html>
+    

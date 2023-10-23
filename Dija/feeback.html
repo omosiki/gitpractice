@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#icons').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="styless.css">
+    <title>Feedback</title>
+</head>
+<body>
+    <nav>
+        <label class="logo">Dija<i class="fa fa-heart"></i></label>
+        <ul>
+            <li><a class="active" href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.htnl">Contact</a></li>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+       <label id="icons">
+            <i class="fa fa-bars"></i>
+       </label>
+    </nav>
+    <form>
+        <div class="form-control">
+            <label for="name" id=" label-name">
+                Name
+            </label>
+            <input type="name" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-control">
+            <label for="email" id="email">Email
+                <input type="email" id="email" placeholder="Your email">
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="location" id="location">Location 
+                <input type="text" id="location" placeholder="Location">
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="role" id="label role">
+
+            </label>
+            <select name="role" id="role">
+                <option value="customer care">Customer Care</option>
+                <option value="goods delay">Pickup Delay</option>
+                <option value="damage goods">Damage Goods</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label for="comment">
+                Any Compliment or Complain
+            </label>
+            <textarea name="comment" id="comment" placeholder="Enter your comment here" ></textarea>
+        </div>
+        <button type="submit" value="submit">Submit</button>
+    </form>
+    <section class="footer">
+        <h4>For more enquiry</h4>
+        <p> Dija Store appreciate your patronag <span class="icons"><i class="fa fa-phone"></i></span> Or Contact Us for any Issue<br><br>
+            <a href="contact.html" class="hero-btn">Contact Us</a><br><br>
+            You can reach us via our other platform.
+        </p>
+        <div class="icons">
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        
+    </section>
+</body>
+</html>
